@@ -43,13 +43,24 @@
   };
 
   outputs = inputs @ {
-
+    self,
   }:
+  with self.lib;
   let
+    inherit (self) outputs;
+  in {
+    lib = import ./lib {inherit inputs outputs;};
 
-  in
-  {
+    devshells = ...;
 
+    packages = ...;
+
+    overlays = import ./overlays {inherit inputs;};
+
+    nixosModules = ...;
+
+    homeManagerModules = ...;
+
+    nixosConfigurations = ...;
   };
-
 }
