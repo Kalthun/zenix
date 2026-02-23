@@ -1,5 +1,5 @@
 {
-  description = "";
+  description = "The more you know, the less you know.";
 
   inputs = {
 

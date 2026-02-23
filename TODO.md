@@ -1,1 +1,5 @@
-wallpapers/
+- [] General Configuration (learn library functions)
+- [] Impermanence
+- [] Secrets
+- [] Theming
+- [] wallpapers/
